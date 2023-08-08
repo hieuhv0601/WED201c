@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>IceCream</title>
+	<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+	<!--Embed CSS here-->
+	<link rel="stylesheet" href="css/styleindex.css">
+</head>
+
+<body>
+
+	<div> <!--container-->
+		<div class="header-container"> <!--content header-->
+			<div class="header-text">
+				<p>1 cup of ice cream = Thousand words of love</p>
+			</div>
+			<div class="header-logo">
+				<img src="images/logoice.png" alt="Ice Cream" />
+			</div>
+			<div class="header-text">
+				<p>Where love begins</p>
+			</div>
+		</div>
+		<!-- kết thúc header-->
+
+		<div class="menu"> <!--content menu-->
+			<ul class="navbar">
+				<li class="navbar__link"><a href="#home">Home</a></li>
+				<li class="navbar__link"><a href="#about">About</a></li>
+				<li class="navbar__link"><a href="#news">Ice Cream Menu</a></li>
+				<li class="navbar__link"><a href="#contact">Milk Tea Menu</a></li>
+				<li class="navbar__link"><a href="#contact">Events</a></li>
+				<li class="navbar__link"><a href="#contact">News</a></li>
+				<li class="navbar__link"><a href="#contact">Contact</a></li>
+
+			</ul>
+		</div> <!--kết thúc menu-->
+
+		<div class="banner"> <!--content banner-->
+
+			<img src="images/Bannerice01.jpg" alt="Ice Cream" />
+			<img src="images/Bannerice02.jpg" alt="Ice Cream" />
+
+		</div> <!--kết thúc banner-->
+
+		<div class="highlight">
+			<div class="highlight-image"> <!--image product-->
+
+				<img src="images/kemsaurieng.jpg" alt="Durian ice-cream" />
+
+			</div> <!--kết thúc image product-->
+
+			<div class="highlight-content"> <!--detail content-->
+
+				<h2>Durian ice-cream</h2>
+
+				<p>Durian ice cream is a favorite dessert made from durian</p>
+
+				<p>Durian ice cream is both an attractive dessert and at the same time a food that provides us with a
+					lot of energy (about 456 calories)</p>
+
+				<p>8 simple ways to make durian ice cream at home very delicious</p>
+				<ul>
+					<li>How to make durian ice cream with whipping cream </li>
+					<li>How to make durian ice cream without eggs </li>
+					<li>How to make durian ice cream without fresh milk </li>
+					<li>How to make durian ice cream without gelatin </li>
+					<li>How to make durian ice cream with fresh milk </li>
+					<li>How to make green bean durian ice cream </li>
+					<li>How to make chocolate durian ice cream </li>
+					<li>How to make banana durian ice cream </li>
+				</ul>
+			</div>
+		</div>
+		<!--kết thúc detail content-->
+
+		<div style="clear: both;"></div>
+
+		<div class="order">
+			<form class="menu-list">
+				<div class="menu-list_header">
+					<p class="menu-list_header-first">IceCream & Milk Tea</p>
+					<span class="menu-list_header-second">
+						<hr class="minus">Menu List
+						<hr class="minus">
+					</span>
+				</div>
+				<div class="menu-list_content">
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="2" id="coconut">
+							<label for="coconut">Coconut cream</label>
+						</div>
+						<span class="menu-list_item-price">2$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="2.5" id="strawberry">
+							<label for="strawberry">Strawberry ice-cream</label>
+						</div>
+						<span class="menu-list_item-price">2.5$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="3" id="durian">
+							<label for="durian">Durian ice-cream</label>
+						</div>
+						<span class="menu-list_item-price">3$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="2" id="buttermilk">
+							<label for="buttermilk">Buttermilk ice-cream</label>
+						</div>
+						<span class="menu-list_item-price">2$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="2.5" id="mango">
+							<label for="mango">Mango ice-cream</label>
+						</div>
+						<span class="menu-list_item-price">2.5$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="3" id="milktea">
+							<label for="milktea">Milk tea</label>
+						</div>
+						<span class="menu-list_item-price">3$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="2" id="matcha">
+							<label for="matcha">Matcha milk tea</label>
+						</div>
+						<span class="menu-list_item-price">2$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="2.5" id="coffee">
+							<label for="coffee">Coffee milk tea</label>
+						</div>
+						<span class="menu-list_item-price">2.5$</span>
+					</div>
+					<div class="menu-list_item">
+						<div>
+							<input type="checkbox" name="item" value="3" id="caramel">
+							<label for="caramel">Caramel milk tea</label>
+						</div>
+						<span class="menu-list_item-price">3$</span>
+					</div>
+
+				</div>
+				<button class="order-button" type="button" onclick="CalTotal()">Order</button>
+			</form>
+
+			<form class="menu-list">
+				<div class="menu-list_header">
+					<p class="menu-list_header-first">Your IceCream & Milk Tea</p>
+					<span class="menu-list_header-second">
+						<hr class="minus">Menu List
+						<hr class="minus">
+					</span>
+				</div>
+				<div class="menu-list_content">
+
+				</div>
+				<div class="menu-list_footer">
+					Total amount: <span id="total-price"></span>
+				</div>
+			</form>
+		</div>
+
+		<div class="footer"> <!--content footer-->
+			<p>Email : Icecream@gmail.com</p>
+			<p>Address: 100 To Hien Thanh, District 10, HCMC</p>
+			<h5>&copy; Copyright 2021. IceCream.com</h5>
+
+		</div><!-- kết thúc footer-->
+
+	</div><!--Kết thúc container-->
+
+	<!--Embed Javascript here-->
+	<script>
+		function CalTotal() {
+			let total = 0, menuListOrder = document.querySelectorAll('.menu-list')[0],
+				menuListCart = document.querySelectorAll('.menu-list')[1],
+				totalPrice = document.querySelector('#total-price'),
+				checkedItems = menuListOrder.querySelectorAll('input[type="checkbox"]:checked'),
+				menuListFooter = document.querySelector('.menu-list_footer'),
+				menuListCartContent = menuListCart.querySelector('.menu-list_content');
+
+			menuListCartContent.innerHTML = '';
+			checkedItems.forEach(item => {
+				const itemLabel = item.parentElement.querySelector('label').innerText;
+				total += Number(item.value);
+				menuListCartContent.innerHTML += `
+					<div class="menu-list_item">
+						<div>
+							<label>${itemLabel}</label>
+						</div>
+					</div>
+				`;
+			});
+			totalPrice.innerText = `${total}$`;
+			if (total > 0) {
+				menuListFooter.style.display = 'block';
+			} else {
+				menuListFooter.style.display = 'none';
+			}
+		}
+	</script>
+</body>
+
+</html>

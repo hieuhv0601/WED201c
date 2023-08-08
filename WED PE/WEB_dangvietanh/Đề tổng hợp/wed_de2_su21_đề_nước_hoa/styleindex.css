@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgb(72, 72, 236);
+}
+.header{
+    height: 10vh;
+    display: flex;
+}
+.logochanel{
+    
+    margin-left: 50px;
+    width: calc(25% - 50px);
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header img{
+    width: 90px;
+    height:70px;
+}
+.link_a{
+    width: 50%;
+}
+.link_a ul{
+    display: flex;
+    list-style-type: none;
+    /* padding-top: 1%; */
+
+}
+.link_a ul li{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link_a ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+
+
+}
+.search{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search button{
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+}
+.img_banner{
+        width: 100%;
+}
+img{
+    width: 100px;
+}
+.img_banner img{
+    object-fit: fill;
+    width: 100%;
+}
+.body{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: red;
+    margin: 30px;
+    font-size: 30px;
+}
+.sale_off{
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 7px 7px;
+    display:inline-block;
+    margin: 0 10px;
+    /* height: 60vh; */
+    max-width: fit-content;
+    width: calc(92% / 4);
+    font-size: 10px;
+    text-align: center;
+}
+.sale_off img{
+    width: 100%;
+    height: 40vh;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+.sale_off p{
+    font-weight: 700;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.sale_off p del{
+    font-weight: normal;
+    color: rgb(147, 140, 140);
+}
+.sale_off .buy_now{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(219, 152, 16);
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vip{
+    background-image: url(images/Banner02.jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vip h2{
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+.container{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.chanel_n5{
+    box-shadow: rgba(8, 8, 10, 0.2) 1px 1px 10px 7px;
+    width: 48%;
+    height: 100%;
+}
+.chanel_n5 img{
+    float: left;
+    width: 50%;
+    max-width: fit-content;
+}
+.chanel_n5 h3{
+    margin: 15px 0;
+    font-size: 25px;
+}
+.chanel_n5 p{
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.854);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+}
+.footer p,h5{
+    margin:0 0 15px 0;
+}

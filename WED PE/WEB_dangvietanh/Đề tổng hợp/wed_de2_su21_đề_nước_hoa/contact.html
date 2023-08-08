@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Contact</title>
+    <link rel="stylesheet" href="stylecontact.css">
+</head>
+
+<body>
+    <div class="contact">
+        <table>
+            <tr>
+                <td>
+                    <label for="FullName">Full Name</label>
+                </td>
+                <td>
+                    <!-- onclick="Yellow_Background(1)" onmousedown="White_Background()" -->
+                    <input id="input_1" type="text" onmousedown="White_Background()" placeholder="Enter full name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phone">Phone</label>
+                </td>
+                <td>
+                    <!-- onclick="Yellow_Background(2)" -->
+                    <input id="input_2" type="number" onfocus="Yellow_Background(2)" onmousedown ="White_Background(2)" placeholder="Enter full Phone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email</label>
+                </td>
+                <td>
+                    <!-- onclick="Yellow_Background(3)" -->
+                    <input id="input_3" onfocus="Yellow_Background(3)" onclick="Yellow_Background(3)" onmousedown="White_Background(3)" type="text" placeholder="Enter full Email">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                    <button onclick="white_back()">Send</button>
+                </td>
+            </tr>
+
+
+        </table>
+
+
+    </div>
+
+    <script src="mycode.js"></script>
+
+</body>
+
+</html>

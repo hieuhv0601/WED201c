@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-left {
+    width: 120px;
+    height: 120px;
+}
+
+.header-left img {
+    width: 100%;
+}
+
+.header-center {}
+
+.header-nav {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #05A3C8;
+    font-size: 20px;
+}
+
+.header-right button {
+    background-color: #000;
+    color: white;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.content h1 {
+    color: #05A3C8;
+    text-align: center;
+}
+
+.content p {
+    color: orange;
+}
+
+.form-favorite {
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #05A3C8;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.form-favorite-header {
+    background-color: #0CB6AB;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-favorite-body {}
+
+.form-content {
+    background-color: #E7E3E4;
+    padding: 8px;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.form-input input {
+    height: 26px;
+    width: 200px;
+}
+
+.form-input select {
+    width: 208px;
+    height: 32px;
+}
+
+.form-input label {
+    width: 150px;
+}
+
+.book-tour {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-tour button {
+    background-color: orangered;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 12px 36px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+#price{
+    flex: 1;
+    text-align: end;
+    color: orangered;
+}
+#total-amount {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#amount {}
+
+.footer {
+    background-color: #05A3C8;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-left {}
+
+.footer-right {}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 0;
+}

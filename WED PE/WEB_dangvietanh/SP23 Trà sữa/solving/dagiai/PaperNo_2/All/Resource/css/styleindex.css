@@ -1,0 +1,190 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    text-align: center;
+    font-family: 'Ephesis';
+    font-size: 34px;
+    font-weight: 600;
+    color: green;
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.header-logo img {
+    border-radius: 50%;
+    border: 2px solid green;
+    width: 150px;
+    height: 150px;
+}
+
+.menu {
+    background-color: green;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.navbar__link {
+    margin: 0 34px;
+}
+
+.navbar__link a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.highlight {
+    display: flex;
+    margin-top: 20px;
+}
+
+.highlight-image {
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.highlight-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.highlight-content {
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+.highlight-content h2 {
+    margin-top: 0;
+    color: rgb(250, 65, 96);
+}
+
+.highlight-content p {
+    font-weight: 600;
+
+}
+
+.highlight-content p:nth-child(5) {
+    color: rgb(250, 65, 96);
+}
+
+.highlight-content ul {
+    list-style: circle;
+}
+
+.highlight-content li {
+    font-family: 'Ephesis', 'cursive';
+    color: #B1D9CE;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.menu-list {
+    margin: 0 40px;
+    width: 300px;
+
+}
+
+.menu-list_header {
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+.menu-list_header-first {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-list_header-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minus {
+    width: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.menu-list_content {
+    background-color: #E9E3E3;
+    padding: 10px 10px;
+}
+
+.menu-list_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-list_item label, input {
+    cursor: pointer;
+}
+
+.menu-list_item-price {
+    color: #F7732B;
+    font-weight: 600;
+}
+
+.menu-list_footer {
+    background-color: #F7732B;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
+
+.order-button {
+    background-color: #F7732B;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: calc(70% - 80px);
+}
+
+
+
+.total {}
+
+.total-price {}
+
+.footer {
+    background-color: green;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}

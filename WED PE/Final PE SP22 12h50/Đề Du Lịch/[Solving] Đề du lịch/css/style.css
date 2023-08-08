@@ -1,0 +1,91 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.places > img {
+  width: 120px;
+  height: 130px;
+  padding: 15px 0px 15px 0px;
+}
+.vungtau img {
+  width: 100%;
+}
+
+.vungtau {
+  margin-top: 10px;
+  padding-left: 0px;
+}
+.places span {
+  position: relative;
+  bottom: 42px;
+}
+
+.places h4 {
+  margin-top: 10px;
+  color: orange;
+  font-size: medium;
+  border-bottom: rgb(68, 156, 228) solid;
+}
+.hotel-content img {
+  width: 100%;
+}
+.hotel-content {
+  position: relative;
+}
+
+.hotel-text h3 {
+  background-color: rgba(0, 0, 0, 0.189);
+  font-size: medium;
+  color: aliceblue;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0px 0px 0px 0px !important;
+}
+.hotel-title {
+  font-size: 20px;
+}
+.tour-title,
+.hotel-title {
+  color: aqua;
+  padding-bottom: 10px;
+}
+
+.footer-text {
+  background-color: rgb(40, 167, 125);
+  color: aliceblue;
+  text-align: center;
+  padding-top: 2px;
+  padding-left: 5px; /* Adjust the padding as needed */
+  padding-right: 5px; /* Adjust the padding as needed */
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+}
+
+.footer-text p {
+  padding-top: 2px;
+  margin-bottom: 3px;
+}
+.footer-text h5 {
+  padding: 5px;
+  margin: 5px;
+}
+table th {
+  color: aquamarine;
+  text-align: center;
+}
+
+table td {
+  color: orange;
+  text-align: center;
+}
+.footer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.footer-content {
+  width: 103%; /* Make sure the parent container has 100% width */
+}

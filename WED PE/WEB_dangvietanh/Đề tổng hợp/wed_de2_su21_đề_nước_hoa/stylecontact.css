@@ -1,0 +1,17 @@
+body{
+    box-sizing: border-box;
+}
+
+.contact{
+    object-fit: fill;
+    display: inline-block;
+
+}
+input{
+    margin-left: 20px;
+    height: 30px;
+    width: 250px;
+}
+.active{
+    background-color: yellow;
+}

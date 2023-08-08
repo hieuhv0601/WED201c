@@ -1,0 +1,61 @@
+.vungtau {
+  padding-left: 0px;
+}
+.vungtau img {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.places img {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+}
+
+.places h4 {
+  margin-top: 10px;
+  color: orange;
+  border-bottom: 2px rgb(22, 157, 229) solid;
+}
+.hotel-title h1 {
+  color: rgb(22, 157, 229);
+  font-size: large;
+}
+.hotel-content {
+  position: relative;
+}
+
+.hotel-text {
+  width: 100%;
+  background-color: rgba(233, 21, 21, 0.251);
+  text-align: center;
+  color: aliceblue;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.table-tour h2 {
+  color: aqua;
+}
+
+.table-tour th {
+  color: rgb(19, 190, 133);
+  text-align: center;
+}
+
+.table-tour td {
+  color: orange;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(6, 82, 56);
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+
+.footer-text {
+  padding: 10px;
+}

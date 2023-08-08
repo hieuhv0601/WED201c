@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.header__tile {
+    color: red;
+}
+
+.header__logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.header__search button {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+}
+
+.menu {
+    background-color: #333;
+    flex: 1;
+
+}
+
+.navbar__left {
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar__left__link {
+    padding: 20px;
+}
+
+.navbar__left__link a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__left__link:hover {
+    background-color: green;
+}
+
+.navbar__left li:first-child {
+    background-color: rgb(0, 140, 255);
+}
+
+
+.accessories {
+    width: calc((100%/12)*10);
+}
+
+.accessories__title {
+    text-align: center;
+    color: rgb(0, 162, 255);
+    padding: 20px 0;
+    margin-top: 0;
+}
+
+.accessories__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 40px;
+}
+
+.accessories__list__item {
+    max-width: calc((100%/12)*4);
+    margin-bottom: 50px;
+   
+}
+
+.accessories__list__item__info {
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0;
+}
+.accessories__list__item__info div{
+    background-color:orangered;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+.accessories__list__item__info img{
+    width: 100%;
+}
+.accessories__list__item__info p{
+    color: orangered;
+    font-weight: bold;
+}
+.accessories__list__item__info del{
+    color: grey;
+    font-weight: 200;
+}
+.accessories__list__item__info div{
+    cursor: pointer;
+}
+.accessories__list__item__info:a{
+    background-color:white;
+}
+.footer{
+    text-align:center;
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+.footer__content{
+    padding: 10px 0;
+}

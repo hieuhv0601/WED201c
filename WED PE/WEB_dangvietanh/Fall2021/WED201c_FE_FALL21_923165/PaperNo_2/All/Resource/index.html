@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TuanPhongLaptop</title>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./CSS/styleindex.css">
+<style>
+	
+	
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0AB4B7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: #F3F90E;
+}
+
+.sidebar a:hover {
+  color: #FFFFFF;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #F76E12;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #0BC9C0;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+  margin-left: 300px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+	
+
+
+</head>
+
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">LapTop</a>
+  <a href="#">PC</a>
+  <a href="#">Contact</a>
+</div>
+
+	
+<div class="header">
+	
+	<div class="header_logo">
+		<a href="index.html"><img src="images/logochanel.png"></a>
+	</div>
+
+
+	<div class="header_search">
+		<form>
+		<input type="text" placeholder="Search in website">
+		<button type="submit">Search</button>
+		</form>
+
+	</div>
+
+	<div class="header_menu">
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Menu</button>  
+		</div>
+	</div>
+	
+</div> 
+	
+	
+	
+<div class="header_banner">
+		
+	<img src="images/Banner01.jpg" alt="Chanel" />
+		
+</div>
+	
+<div class="best_seller"> 
+	<div class="best_seller-title">
+		<h1>Best Sellers</h1>
+	</div>
+	<div class="best_seller_info">
+		<div class="best_seller_info-image">
+			<img src="images/Asus01.jpg" alt="Laptop Asus Core i7" />
+		</div>
+		<div class="best_seller_info-detail">
+			<h2>ASUS ROG STRIX G17 - 2021</h2>
+	
+			<p>Integrated with <span>AMD Ryzen 7-5800H</span> Asus Rog processor that delivers high performance, upgraded processing speed and power savings with 8 cores, 16 threads, with a base frequency of 3.2 GHz and up to clock the maximum is 4.4 GHz. You can experience productive work that meets your needs from basic office work to graphic design and gaming jobs in comfort.</p>
+	
+			<p>With <span>16 GB DDR4 RAM</span> on the machine enough to run multitasking smoothly, you can both listen to music on YouTube while playing games or designing on software without worrying about lag or stalling. If you find the configuration is not smooth enough for multitasking, Asus Rog also supports an empty RAM slot for you to upgrade RAM up to 32 GB.</p>
+	
+			<p>Besides, the machine is also equipped with discrete graphics card <span>NVIDIA GeForce RTX 3070 8GB</span> for smooth graphics processing with Premiere design applications, Photoshop, ... or conquering hot, love heavy games. high graphics requirements such as PUBG, Far Cry 5, Battlefield Company 2, etc. at medium to high graphics settings.</p>
+		</div>
+	</div>
+	
+
+	<div style="clear: both;"></div>
+</div> 
+	
+	
+	
+<div class="new_sale_off">
+	<div class="new_sale_off-title">
+		<h1>NEW YEAR SALE OFF</h1>
+	</div>
+	<div class="new_sale_off-list">
+		<div class="new_sale_off-item">
+			<img src="images/sale01.jpg" alt="Laptop Asus" />
+			<h4>Office laptop Core i5</h4>
+			<p> <del>900$ </del> &nbsp; &nbsp;  750 $ </p>
+			<div>Buy Now</div>
+		</div>
+	
+		<div class="new_sale_off-item">
+			<img src="images/sale02.jpg"  alt="Laptop Asus"  />
+			<h4>Office laptop Core i7</h4>
+			<p> <del>1100$ </del> &nbsp; &nbsp;  960$ </p>
+			<div>Buy Now</div>
+		</div>
+	
+		<div class="new_sale_off-item">
+			<img src="images/sale03.jpg"  alt="Laptop Asus"  />
+			<h4>laptop Gaming Core i5</h4>
+			<p> <del>850$</del> &nbsp; &nbsp;  780$ </p>
+			<div>Buy Now</div>
+		</div>
+	
+		<div class="new_sale_off-item">
+			<img src="images/sale04.jpg"  alt="Laptop Asus"  />
+			<h4>laptop Vivobook Core i7</h4>
+			<p> <del>1200$ </del> &nbsp; &nbsp;  1150$ </p>
+			<div>Buy Now</div>
+		</div>
+	</div>
+
+	<div style="clear: both; margin-bottom: 10px;"></div>
+
+</div>	
+
+<div class="footer">
+	<div class="footer_content">
+		<p>Email : TuanPhonglaptop@gmail.com</p>
+		<p>Address: 100 Quang trung,Go vap District, HCMC</p>
+		<h5>&copy; Copyright 2021. TuanPhonglaptop.com</h5>
+	</div>
+	
+
+</div>
+
+	<script src="./js/mycode.js"></script>
+</body>
+
+
+</html>
+
+
