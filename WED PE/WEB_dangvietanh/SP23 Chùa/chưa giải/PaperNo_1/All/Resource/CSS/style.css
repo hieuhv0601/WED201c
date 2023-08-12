@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 100%;
+  max-width: 120px;
+}
+.contentMenu li {
+  display: inline-block;
+}
+.contentMenu a {
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  font-size: 25px;
+  color: rgba(13, 192, 192, 0.719);
+}
+.contentBanner {
+  display: flex;
+  justify-content: center;
+}
+.contentBanner img {
+  width: 100%;
+  max-width: 750px;
+}
+
+.contentDetail h1 {
+  text-align: center;
+  color: navy;
+}
+
+.contentDetail p {
+  color: orange;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contentFooter,
+.contentService {
+  margin-right: 80px;
+  color: aliceblue;
+}
+
+.footer-side h5 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: aliceblue;
+}
+.footer-side {
+  background-color: rgba(124, 75, 14, 0.677);
+  margin: 5px;
+}
+
+.form-tour {
+  margin: auto;
+  align-items: center;
+  text-align: left;
+  background-color: aquamarine;
+  width: 100%;
+  max-width: 500px;
+  height: 550px;
+}
+.form-tour h3 {
+  text-align: center;
+}
+.form {
+  display: flex;
+  padding: 10px;
+}
+label {
+  text-align: left;
+  width: 30%;
+}
+input {
+  text-align: center;
+  width: 30vh;
+  height: 20px;
+}
+select {
+  text-align: center;
+  width: 31vh;
+  height: 25px;
+}
+
+span {
+  text-align: right;
+  color: orange;
+  margin-left: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.result {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.result h5 {
+  background-color: blue;
+  font-size: 25px;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+  margin: auto;
+  width: 450px;
+}

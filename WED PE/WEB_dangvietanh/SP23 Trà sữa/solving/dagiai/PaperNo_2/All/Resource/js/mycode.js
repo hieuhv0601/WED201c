@@ -1,41 +1,54 @@
-var button = document.querySelector('.form-style button')
+var button = document.querySelector(".form-style button");
+var items = {
+  kemdua: "Coconut cream",
+  kemdau: "Strawberry ice-cream",
+  kemdu: "Durian ice-cream",
+};
 
-var items = 
-{
-    "kemdua" : "Coconut cream",
-    "kemdau" : "Strawberry ice-cream",
-    "kemdu" : "Durian ice-cream"
-}
+button.addEventListener("click", (e) => {
+  e.preventDefault();
 
-button.addEventListener('click', e => {
-    e.preventDefault();
-    let item = document.querySelectorAll('input[name="item"]:checked')
-    let htmls = "";
-    item.forEach(item => {
-        htmls += `
-        <div class="order-item">
-            <div class="product-name">
-                ${items[item.id]}
+  let checkboxes = document.querySelectorAll('.menu-form input[name="item"]');
+  let selectedItems = [];
+
+  checkboxes.forEach((checkbox) => {
+    if (checkbox.checked) {
+      selectedItems.push(checkbox.id);
+    }
+  });
+
+  let itemsBlock = document.querySelector(".order-list-content");
+  let price = CalTotal(selectedItems);
+
+  let htmls = "";
+  selectedItems.forEach((itemId) => {
+    htmls += `
+            <div class="order-item">
+                <div class="product-name">
+                    ${items[itemId]}
+                </div>
             </div>
-        </div>
-        `
-    })
-    let itemsBlock = document.querySelector('.itemss')
-    let price = CalTotal(item)
-    htmls += 
-    `
-    <div class="total">
-        Total amount: ${price} $
-    </div> 
-    `
-    itemsBlock.innerHTML = htmls;
-})
+        `;
+  });
 
-function CalTotal(item)
-{
-    let total = 0;
-    item.forEach(item => {
-        total += parseInt(item.value);
-    })
-    return total
+  let totalSection = document.querySelector(".total");
+  let totalPriceElement = totalSection.querySelector(".total-price");
+
+  if (price > 0) {
+    totalSection.style.display = "block";
+    totalPriceElement.textContent = price.toFixed(2) + " $";
+  } else {
+    totalSection.style.display = "none";
+  }
+
+  itemsBlock.innerHTML = htmls;
+});
+
+function CalTotal(selectedItems) {
+  let total = 0;
+  selectedItems.forEach((itemId) => {
+    let checkbox = document.getElementById(itemId);
+    total += parseFloat(checkbox.value);
+  });
+  return total;
 }

@@ -7,32 +7,32 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styleindex.css">
 	<!--Embed CSS here-->
-
+	<link rel="stylesheet" href="css/style.css">
 	<script defer src="js/mycode.js"></script>
 </head>
 
 <body>
 
-	<div> <!--container-->
+	<div class="container"> <!--container-->
 
-		<div> <!--content header-->
+		<div class="container-header"> <!--content header-->
 
-			<div>
+			<div class="header-sologan">
 				<p>1 cup of ice cream = Thousand words of love</p>
 			</div>
 
-			<div>
+			<div class="header-logo">
 				<img src="images/logoice.png" alt="Ice Cream" />
 			</div>
 
-			<div>
+			<div class="header-sologan">
 				<p>Where love begins</p>
 			</div>
 
 		</div>
 		<!-- kết thúc header-->
 
-		<div> <!--content menu-->
+		<div class="content-menu"> <!--content menu-->
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
@@ -45,21 +45,21 @@
 			</ul>
 		</div> <!--kết thúc menu-->
 
-		<div> <!--content banner-->
+		<div class="content-banner"> <!--content banner-->
 
 			<img src="images/Bannerice01.jpg" alt="Ice Cream" />
 			<img src="images/Bannerice02.jpg" alt="Ice Cream" />
 
 		</div> <!--kết thúc banner-->
 
-		<div>
+		<div class="imgage-product">
 			<div> <!--image product-->
 
 				<img src="images/kemsaurieng.jpg" alt="Durian ice-cream" />
 
 			</div> <!--kết thúc image product-->
 
-			<div> <!--detail content-->
+			<div class="detail-content"> <!--detail content-->
 
 				<h2>Durian ice-cream</h2>
 
@@ -85,69 +85,105 @@
 
 		<div style="clear: both;"></div>
 
-		<div>
-			<form>
-				<div>
+		<div class="form-container">
+			<form class="menu-form">
+				<div class="menu-list-header">
 					<p>IceCream & Milk Tea</p>
 					<p>-----------Menu List-----------</p>
 				</div>
-				<div>
-					<div>
+				<div class="menu-list-content">
+					<div class="menu-item">
 						<div>
-							<input type="checkbox" name="item" id="kemdua" value="2"> Coconut cream </input>
+							<input type="checkbox" name="item" id="kemdua" value="2" onchange="updateOrderList()" > Coconut cream </input>
 						</div>
 						<div>
 							2$
 						</div>
 					</div>
-					<div>
+					<div class="menu-item">
 						<div>
-							<input type="checkbox" name="item" id="kemdau" value="2.5"> Strawberry ice-cream </input>
+							<input type="checkbox" name="item" id="kemdau" value="2.5" onchange="updateOrderList()"> Strawberry ice-cream </input>
 						</div>
 						<div>
 							2.5$
 						</div>
 					</div>
-					<div>
+					<div class="menu-item">
 						<div>
-							<input type="checkbox" name="item" id="kemdu" value="3"> Durian ice-cream </input>
+							<input type="checkbox" name="item" id="kemdu" value="3" onchange="updateOrderList()"> Durian ice-cream </input>
+						</div>
+						<div>
+							3$
+						</div>
+					</div>
+					<div class="menu-item">
+						<div>
+							<input type="checkbox" name="item" id="kembo" value="2" onchange="updateOrderList()"> Buttermilk ice-cream </input>
+						</div>
+						<div>
+							2$
+						</div>
+					</div>
+					<div class="menu-item">
+						<div>
+							<input type="checkbox" name="item" id="kemxoai" value="2.5" onchange="updateOrderList()"> Mango ice-cream </input>
+						</div>
+						<div>
+							2.5$
+						</div>
+						
+					</div>
+					<div class="menu-item">
+						<div>
+							<input type="checkbox" name="item" id="tra-sua" value="3" onchange="updateOrderList()"> Milk tea </input>
+						</div>
+						<div>
+							3$
+						</div>
+					</div>
+					<div class="menu-item">
+						<div>
+							<input type="checkbox" name="item" id="tra-sua-matcha" value="2" onchange="updateOrderList()"> Matcha tea </input>
+						</div>
+						<div>
+							2$
+						</div>
+					</div>
+					<div class="menu-item">
+						<div>
+							<input type="checkbox" name="item" id="tra-sua-coffee" value="2.5" onchange="updateOrderList()"> Coffee tea </input>
+						</div>
+						<div>
+							2.5$
+						</div>
+					</div>
+					<div class="menu-item">
+						<div>
+							<input type="checkbox" name="item" id="tra-sua-caramel" value="3" onchange="updateOrderList()"> Caramel tea </input>
 						</div>
 						<div>
 							3$
 						</div>
 					</div>
 				</div>
-				<button>Order</button>
+				<button type="button" onclick="CalculateTotal()">Order</button>
 			</form>
-			<form>
-				<div>
+			<form class="order-form">
+				<div class="menu-list-header">
 					<p>Your IceCream & Milk Tea</p>
 					<p>-----------Menu List-----------</p>
 				</div>
-				<div>
-					<div>
-						<div>
-							2$
-						</div>
-					</div>
-					<div>
-						<div>
-							2.5$
-						</div>
-					</div>
-					<div>
-						<div>
-							3$
-						</div>
-					</div>
+				<div class="order-list-content">
+					
+					
 				</div>
-				<div class="total">
+				<div class="total" style="display: none;">
 					Total amount: <span class="total-price"></span>
 				</div>
 			</form>
 		</div>
 
-		<div> <!--content footer-->
+		<div class="content footer"> <!--content footer-->
 
 			<p>Email : Icecream@gmail.com</p>
 			<p>Address: 100 To Hien Thanh, District 10, HCMC</p>
@@ -158,6 +194,7 @@
 	</div><!--Kết thúc container-->
 
 	<!--Embed Javascript here-->
+	<script src="js/mycode.js"></script>
 </body>
 
 </html>
