@@ -1,0 +1,92 @@
+.description-content p,
+.vario-content p,
+.accessories-item-content p {
+  word-spacing: 2px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+}
+.logo,
+.search,
+.feedback {
+  height: 100px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .logo,
+  .search,
+  .feedback {
+    text-align: center;
+    padding: 0px 0px 0px 0px !important;
+    height: auto;
+  }
+  .feedback h3 {
+    padding-left: 0px !important;
+    font-size: 15px !important;
+  }
+}
+
+.search {
+  padding-top: 65px;
+}
+.feedback {
+  padding-top: 60px;
+}
+.header {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.feedback h3 {
+  font-size: 18px;
+  padding-left: 100px;
+}
+.logo img {
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
+}
+.lemenu {
+  width: 100%;
+}
+.bg-primary {
+  width: 100%;
+}
+
+#air-blade {
+  width: 100%;
+  max-width: 800px;
+}
+.vision {
+  width: 100%;
+  max-width: 300px;
+}
+.product-title {
+  color: rgba(31, 209, 209, 0.86);
+}
+.item-title {
+  color: orange;
+  font-size: 25px;
+}
+
+.price {
+  color: red;
+  font-size: 15px;
+}
+.accessories-item-title {
+  color: orange;
+  text-align: center;
+  font-size: 25px;
+}
+.description-content p {
+  margin: 10px 15px 10px 15px;
+}
+.footer {
+  margin-top: 15px;
+  text-align: center !important;
+  background-color: rgb(29, 187, 187);
+  color: aliceblue;
+  padding: 10px 5px 2px 5px;
+}
+.vehicle {
+  text-align: center;
+}
